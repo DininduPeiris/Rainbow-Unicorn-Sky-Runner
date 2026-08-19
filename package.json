@@ -1,0 +1,16 @@
+{
+  "name": "js13k-unicorn-runner",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build && node build-zip.js",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "archiver": "^7.0.1",
+    "terser": "^5.39.0",
+    "vite": "^6.2.0"
+  }
+}
