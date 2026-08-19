@@ -19,11 +19,11 @@ export default defineConfig({
         comments: false,
       },
     },
-    assetsInlineLimit: 100000,
     cssCodeSplit: false,
     rollupOptions: {
       output: {
-        manualChunks: () => 'app',
+        format: 'iife',
+        name: 'GameApp',
       },
     },
   },
