@@ -31,7 +31,7 @@ export class UIManager {
 
   loadHighScore() {
     try {
-      const val = localStorage.getItem('js13k_unicorn_hi');
+      const val = localStorage.getItem('js13k_2026_unicorn_sky_runner_hi');
       return val ? parseInt(val, 10) : 0;
     } catch(e) {
       return 0;
@@ -42,7 +42,7 @@ export class UIManager {
     if (score > this.highScore) {
       this.highScore = score;
       try {
-        localStorage.setItem('js13k_unicorn_hi', score.toString());
+        localStorage.setItem('js13k_2026_unicorn_sky_runner_hi', score.toString());
       } catch(e) {}
       this.updateHighScoreDisplay(score);
       return true; // New record!
